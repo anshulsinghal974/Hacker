@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindfulMed</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    /* Hamburger Menu (3 lines) */
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      left: 20px;
+      top: 15px;
+    }
+    .hamburger div {
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: 5px;
+      transition: 0.3s;
+    }
+
+    /* Dropdown Menu */
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: #333;
+      width: 200px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+    .dropdown a {
+      color: white;
+      padding: 12px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown a:hover {
+      background-color: #555;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #333;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e0f7fa;
+      height: 300px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2em;
+      color: #333;
+    }
+
+    .about, .services, .contact {
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .about h2, .services h2, .contact h2 {
+      color: #4CAF50;
+    }
+
+    .services-list {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .service-item {
+      flex: 1;
+      min-width: 200px;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .contact form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .contact label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .contact input, .contact textarea, .contact button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+
+    /* Media Query for Mobile - Dropdown */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .dropdown a {
+        padding: 10px;
+        font-size: 16px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>MindfulMed</h1>
+
+  <!-- Hamburger Menu -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Dropdown Menu -->
+  <div class="dropdown">
+    <a href="musicrecom.html
+    ">Music Recommendation</a>
+    <a href="">Helpline</a>
+    <a href="">Diseases Predictor</a>
+    <a href="1.html">Cancer</a>
+    <a href="tools1.html">Tools</a> <!-- New Tools dropdown link -->
+    <a href="Fizby.html">Fitzy</a>
+  </div>
+</header>
+
+<!-- Navigation (Desktop) -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <h2>Your Health, Our Priority</h2>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>Welcome to MindfulMed, where your well-being is our utmost concern. Our team of professionals is dedicated to providing top-quality healthcare services tailored to meet your individual needs.</p>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <div class="services-list">
+    <div class="service-item">
+      <h3>Diabetes Insights</h3>
+      <p>Advanced detection and predictive analysis for proactive diabetes management.</p>
+    </div>
+    <div class="service-item">
+      <h3>Cardio Care</h3>
+      <p>Early detection and personalized risk assessment for heart health.</p>
+    </div>
+    <div class="service-item">
+      <h3>Cancer Prognosis</h3>
+      <p>Full range of diagnostic tests to support your treatment plan.</p>
+    </div>
+    <div class="service-item">
+      <h3>24x7 Consultation</h3>
+      <p>24/7 emergency services for immediate and urgent care needs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Healthcare Clinic. All rights reserved.</p>
+</footer>
+
+<script>
+  // Function to toggle the dropdown menu
+  function toggleMenu() {
+    const dropdown = document.querySelector('.dropdown');
+    // Toggle dropdown visibility
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  }
+
+  // Form submission handler
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for contacting us. We will get back to you shortly.');
+    event.target.reset();
+  });
+</script>
+
+</body>
+</html>
